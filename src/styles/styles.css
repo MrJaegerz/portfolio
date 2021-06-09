@@ -1,0 +1,290 @@
+html,
+body {
+    height: 100vh;
+    background-image: url(../assets/img/background.jpg);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+main {
+    margin-left: 300px;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile h1 {
+    color: #FFF;
+    text-align: center;
+}
+
+.profile-picture {
+    margin: 15px auto;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border: 8px solid #2c2f3f;
+    border-radius: 50% !important;
+}
+
+.social-network {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+.social-network a:hover,
+.social-network a:focus,
+.social-network a:active {
+    text-decoration: none;
+    color: #FFF;
+    background-color: #00B4FF;
+}
+
+.profile a {
+    font-size: 18px;
+    display: inline-block;
+    background: #212431;
+    color: #fff;
+    line-height: 1;
+    /* padding: 8px 0; */
+    /* margin-right: 4px; */
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 34px;
+    /* transition: 0.3s; */
+    padding-top: 15px;
+}
+
+
+/* Navbar */
+
+#navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#navbar-left {
+    /* background-color: #040B14; */
+    background-color: rgba(4, 11, 20, 0.8);
+    width: 270px;
+    /* position: absolute; */
+    height: 100%;
+    padding: 0 15px;
+    position: fixed;
+    display: block;
+}
+
+.navbar-right {
+    display: none;
+    padding: 30px;
+    position: fixed;
+    z-index: 50;
+    margin-left: 90%;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    color: #6f7180;
+    padding: 12px 20px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.navbar-title span {
+    color: #6f7180
+}
+
+.navbar-title span :active {
+    color: #fff
+}
+
+a:visited {
+    color: #6f7180;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    color: #00B4FF;
+}
+
+
+/* HOME */
+
+#home {
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: brightness(60%);
+}
+
+.home-name {
+    padding: 30% 40%;
+    color: white;
+    height: 100%;
+}
+
+.Typewriter__wrapper {
+    border-bottom: 2px solid #00B4FF;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFF;
+}
+
+.container h1 {
+    font-size: 32px;
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+.container h2 {
+    margin: 0px 0px 25px 0px;
+}
+
+.container p {
+    font-size: 16;
+}
+
+.content {
+    height: 100%;
+    width: 100%;
+}
+
+.content-separator {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details-infos-perso {
+    display: flex;
+    height: 30;
+}
+
+.row {
+    padding: 0px 30px;
+}
+
+
+/* ABOUT SECTION */
+
+#about #about-img-profile {
+    height: 300px;
+    margin-right: 10px;
+}
+
+#about .infos-perso {
+    display: flex;
+    height: 300px;
+    margin: 30px 0;
+}
+
+#about .content-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about .details-infos-perso i {
+    padding-top: 4;
+    margin-right: 10;
+}
+
+#about .skills-bars {
+    width: 100%;
+    /* height: 15px; */
+    position: relative;
+    /* background-color: #ddd; */
+}
+
+#about .skill-bar {
+    background: linear-gradient(90deg, rgba(255, 225, 225, 1) 0%, rgba(255, 57, 57, 1) 60%, rgba(50, 52, 88, 1) 100%);
+    width: 5px;
+    height: 15px;
+    /* position: absolute; */
+    border-radius: 30px;
+}
+
+@media screen and (min-width: 1085px) {
+    #navbar-left {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1085px) {
+    html,
+    body {
+        background-size: 170%;
+        background-position: initial;
+    }
+    #navbar-left {
+        display: none;
+    }
+    .navbar-right {
+        display: grid;
+    }
+    .navbar-right i {
+        color: #00B4FF;
+    }
+    main {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 794px) {
+    html,
+    body {
+        background-size: 200%;
+        background-position: initial;
+        width: 667px;
+    }
+    #home {
+        width: 667px;
+    }
+    .home-name {
+        padding: 25%;
+    }
+    #about,
+    #portfolio {
+        height: 900px;
+    }
+    #resume {
+        height: 1285px;
+    }
+    #contact {
+        height: 730px;
+    }
+    #about-img-profile {
+        display: none;
+    }
+    .navbar-right {
+        margin-left: 87%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    html,
+    body {
+        background-size: 150%;
+    }
+}
